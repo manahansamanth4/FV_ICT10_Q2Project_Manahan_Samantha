@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>GWA CALCULATOR</title>
+</head>
+<style>
+    .nav {
+  background: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(122, 5, 28, 0.2);
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #a31919;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.nav-left a:hover {
+  background-color: #7db3b5;
+}
+
+.nav-right input[type="text"] {
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #529fa1;
+}
+
+.nav-right button {
+  padding: 6px 10px;
+  background: white;
+  border: 1px solid #529fa1;
+  border-radius: 8px;
+  color: #0c090e;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hello-icon {
+      width: 30px;
+      height: 30px;
+}
+.menu-container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 400px;
+      margin-top: 50px; 
+} 
+</style>
+</head>
+<nav>
+  <div class="nav-left">
+    <a href="MAIN.html"><img class="hello-icon" src="https://png.pngtree.com/png-vector/20231018/ourmid/pngtree-butterfly-logo-icon-png-image_10303495.png">Home</a>
+    <a href="Q2SW.html">GWA</a>
+    <a href="Q2ST.html">Clubs</a>
+  <div>
+
+  <div class="nav-right">
+    <input type="text" placeholder="search..." />
+    <button>Search</button>
+  </div>
+</nav>
+<body class="container mt-4">
+
+  <div class="text-center bg-info p-3 rounded">
+    <h1>School Clubs</h1>
+    <p>Select a club and click the button to see its information</p>
+  </div>
+
+  <div class="col-md-6 mt-4">
+
+    <label class="fw-bold bg-dark text-white p-2 rounded mb-2">
+      Choose your club:
+    </label>
+
+    <select class="form-control mb-3" id="clubs">
+      <option value="MB">Marching Band</option>
+      <option value="GC">Glee Club</option>
+      <option value="DC">Dance Club</option>
+      <option value="SC">Science Club</option>
+      <option value="MC">Math Club</option>
+      <option value="CAC">Communication Arts Club</option>
+      <option value="SSC">Social Studies Club</option>
+      <option value="COCC">COCC</option>
+      <option value="VV">Volleyball Varsity</option>
+      <option value="BV">Basketball Varsity</option>
+    </select>
+
+    <button class="btn btn-primary" id="showBtn">
+      Show Club Information
+    </button>
+
+    <pre id="club-info" class="alert alert-info mt-3"></pre>
+  
+<script type="py" src="Q2ST.py"></script>
+
+</body>
+</html>

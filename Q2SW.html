@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>GWA CALCULATOR</title>
+</head>
+<style>
+    .nav {
+  background: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(122, 5, 28, 0.2);
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #a31919;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.nav-left a:hover {
+  background-color: #7db3b5;
+}
+
+.nav-right input[type="text"] {
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #529fa1;
+  border: 1px solid ;
+}
+
+.nav-right button {
+  padding: 6px 10px;
+  background: white;
+  border: 1px solid #529fa1;
+  border: 1px solid ;
+  border-radius: 8px;
+  color: #020102;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hello-icon {
+      width: 30px;
+      height: 30px;
+}
+.menu-container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 400px;
+      margin-top: 50px; 
+} 
+</style>
+<nav>
+  <div class="nav-left">
+    <a href="MAIN.html"><img class="hello-icon" src="https://png.pngtree.com/png-vector/20231018/ourmid/pngtree-butterfly-logo-icon-png-image_10303495.png">Home</a>
+    <a href="Q2SW.html">GWA</a>
+    <a href="Q2ST.html">Clubs</a>
+  <div>
+
+  <div class="nav-right">
+    <input type="text" placeholder="search..." />
+    <button>Search</button>
+  </div>
+</nav>
+<body class="container mt-4">
+
+    <div class="text-center bg-primary text-black p-3 rounded">
+        <h1>GWA Calculator</h1>
+        <p>Enter your grades below</p>
+    </div>
+
+    <h3 class="mt-3">Personal Information</h3>
+    <input id="First_Name" class="form-control" placeholder="First Name"><br>
+    <input id="Last_Name" class="form-control" placeholder="Last Name"><br>
+
+    <h3>Grades</h3>
+    <input id="science" type="number" class="form-control" placeholder="Science"><br>
+    <input id="math" type="number" class="form-control" placeholder="Math"><br>
+    <input id="english" type="number" class="form-control" placeholder="English"><br>
+    <input id="ss" type="number" class="form-control" placeholder="Social Studies"><br>
+    <input id="ict" type="number" class="form-control" placeholder="ICT"><br>
+    <input id="music" type="number" class="form-control" placeholder="Music"><br>
+
+    <button type="button" class="btn btn-primary" py-click="generate">
+        Calculate GWA
+    </button>
+
+    <pre id="message" class="alert alert-info mt-3"></pre>
+    <div id="output1" class="alert alert-success"></div>
+
+    <script type="py" src="Q2SW.py"></script>
+</body>
+</html>

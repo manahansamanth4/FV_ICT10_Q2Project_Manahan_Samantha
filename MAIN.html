@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>GWA CALCULATOR</title>
+</head>
+<style>
+.nav {
+  background: #000000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(122, 5, 28, 0.2);
+}
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #0e0707;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.nav-left a:hover {
+  background-color: #7db3b5;
+}
+
+.nav-right input[type="text"] {
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #529fa1;
+}
+
+.nav-right button {
+  padding: 6px 10px;
+  background: white;
+  border: 1px solid #529fa1;
+  border-radius: 8px;
+  color: #030505;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hello-icon {
+      width: 30px;
+      height: 30px;
+}
+.menu-container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 400px;
+      margin-top: 50px; 
+} 
+</style>
+<br>
+<nav>
+  <div class="nav-left">
+    <a href="MAIN.html"><img class="hello-icon" src="https://png.pngtree.com/png-vector/20231018/ourmid/pngtree-butterfly-logo-icon-png-image_10303495.png">Home</a>
+    <a href="Q2SW.html">GWA</a>
+    <a href="Q2ST.html">Clubs</a>
+  <div>
+
+  <div class="nav-right">
+    <input type="text" placeholder="search..." />
+    <button>Search</button>
+  </div>
+</nav>
+<body class="container mt-4">
+ <header class="bg-primary text-white text-center p-5">
+    <h1 id="school-title">Welcome to O.B. Montessori</h1>
+    <p id="school-slogan">Seipsum Facit Persona</p>
+  </header>
+
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/4069ea7e-83d6-4367-8825-71aa1ad6b88d/JUNIOR+HIGH+SCHOOL+PROGRAM+-+HERO+IMAGE+-+JAR_3329a.jpg?format=750w" alt="School Image" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2>About OBMC</h2>
+        <p id="school-intro">
+         Operation Brotherhood Montessori Center (OBMC) is a pre-k to 12 educational school, who educates future leaders. Our mission is to nurture students into independent and capable individuals who can excel, lead and shape the future. 
+    </div>
+  </section>
+  <br><br>
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    &copy; 2025. All rights reserved.
+  </footer>
+
+  <script type="py" src="MAIN.py"></script>
+
+</body>
+</html>
